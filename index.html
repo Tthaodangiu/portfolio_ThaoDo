@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thao Do | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="#home" class="logo">Thao<span>Do</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container section reveal morph">
+      <div class="hero-content">
+        <p class="eyebrow">Data Science Student • Aspiring Data Analyst</p>
+        <h1>I'm Thao Do, a Data Analyst Intern</h1>
+        <p class="hero-text">
+          I work on data analysis, CRM analytics, forecasting, route optimization, NLP,
+          and database-driven business applications. My projects focus on solving practical problems,
+          not just applying one type of model.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="https://github.com/Tthaodangiu" target="_blank" class="btn secondary">GitHub ↗</a>
+        </div>
+      </div>
+
+<div class="hero-panel glass-card hero-profile-card">
+  <div class="panel-header">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+<div class="profile-ring">
+  <img src="assets/profile.jpg" alt="Thao Do profile photo">
+  <span class="orbit-badge">+</span>
+</div>
+
+  <div class="metric-card">
+    <p>Portfolio Focus</p>
+    <h3>Data Analyst</h3>
+  </div>
+
+  <div class="mini-grid">
+    <div>SQL</div>
+    <div>Python</div>
+    <div>Machine Learning</div>
+    <div>Data Visualization</div>
+  </div>
+</div>
+    </section>
+
+    <section id="about" class="container section reveal morph">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Data-minded, business-focused.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am a Data Science student preparing for Data Analyst roles. My projects cover
+          customer analytics, time-series forecasting, logistics optimization, NLP classification,
+          and database management systems.
+        </p>
+        <p>
+          I enjoy turning business requirements into data workflows, dashboards, models,
+          and applications that help people make better operational decisions.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="container section reveal morph">
+      <div class="section-heading portfolio-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Portfolio Showcase</h2>
+        <p class="section-subtitle">Explore my projects, certificates, and technical skills. Each project reflects a different business problem and solution approach.</p>
+      </div>
+
+      <div class="portfolio-tabs" role="tablist" aria-label="Portfolio sections">
+        <button class="portfolio-tab active" data-tab="projects" type="button"><span>⌘</span>Projects</button>
+        <button class="portfolio-tab" data-tab="certificates" type="button"><span>▣</span>Certificates</button>
+        <button class="portfolio-tab" data-tab="techstack" type="button"><span>✦</span>Tech Stack</button>
+      </div>
+
+      <div class="portfolio-panel active" id="projectsPanel">
+        <div class="projects-grid">
+          <article class="project-card" data-project="taxi">
+            <div class="project-number">01</div>
+            <p class="project-type">Time Series • Forecasting • Data Analysis</p>
+            <h3>Taxi Demand Forecasting NYC</h3>
+            <p>Forecasted taxi demand using time, location, and weather data.</p>
+            <div class="tags"><span>Python</span><span>Time Series</span><span>Forecasting</span></div>
+          </article>
+          <article class="project-card" data-project="recommendation">
+            <div class="project-number">02</div>
+            <p class="project-type">CRM Analytics • RFM • Recommendation</p>
+            <h3>Personalized Product Recommendation System</h3>
+            <p>Built a CRM analytics system for customer segmentation and product recommendations.</p>
+            <div class="tags"><span>RFM</span><span>Apriori</span><span>Tableau</span><span>Snowflake</span></div>
+          </article>
+          <article class="project-card" data-project="route">
+            <div class="project-number">03</div>
+            <p class="project-type">Logistics • Route Optimization • Web Demo</p>
+            <h3>Last-mile Route Optimization System</h3>
+            <p>Designed a route optimization demo for last-mile delivery operations.</p>
+            <div class="tags"><span>VRP</span><span>OSRM</span><span>Routing</span><span>Dashboard</span></div>
+          </article>
+          <article class="project-card" data-project="fake-news">
+            <div class="project-number">04</div>
+            <p class="project-type">NLP • Text Classification</p>
+            <h3>Fake News Detection</h3>
+            <p>Classified real and fake news using TF-IDF, Word2Vec, and machine learning classifiers.</p>
+            <div class="tags"><span>NLP</span><span>TF-IDF</span><span>Word2Vec</span><span>Classification</span></div>
+          </article>
+          <article class="project-card wide" data-project="business">
+            <div class="project-number">05</div>
+            <p class="project-type">Database • Security • Role-based Business System</p>
+            <h3>Hotel Business Management Website</h3>
+            <p>Built a database-driven hotel management system for booking, billing, payment, and role-based operations.</p>
+            <div class="tags"><span>SQL Server</span><span>Stored Procedures</span><span>Triggers</span><span>RBAC</span><span>Audit Log</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="portfolio-panel" id="certificatesPanel">
+        <div class="certificates-grid">
+          <article class="certificate-card">
+            <img src="assets/certificate-01.png" alt="Certificate 01" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="certificate-placeholder" style="display:none;">Certificate</div>
+            <div class="certificate-info"><h3>Transfer Learning for NLP</h3></div>
+          </article>
+          <article class="certificate-card">
+            <img src="assets/certificate-02.png" alt="Certificate 02" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="certificate-placeholder" style="display:none;">Certificate</div>
+            <div class="certificate-info"><h3>Tweet Emotion Recognition</h3></div>
+          </article>
+          <article class="certificate-card">
+            <img src="assets/certificate-03.png" alt="Certificate 03" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="certificate-placeholder" style="display:none;">Certificate</div>
+            <div class="certificate-info"><h3>Artificial Intelligence Certificate</h3></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="portfolio-panel" id="techstackPanel">
+        <div class="tech-showcase-grid">
+          <article class="tech-icon-card"><img src="assets/icon-powerbi.png" alt="PowerBI" onerror="this.style.display='none';"><span class="fallback-icon">🌐</span><p>PowerBI</p></article>
+          <article class="tech-icon-card"><img src="assets/visualcode.png" alt="VS Code" onerror="this.style.display='none';"><span class="fallback-icon">🎨</span><p>VS Code</p></article>
+          <article class="tech-icon-card"><img src="assets/icon-excel.png" alt="Excel" onerror="this.style.display='none';"><span class="fallback-icon">JS</span><p>Excel</p></article>
+          <article class="tech-icon-card"><img src="assets/icon-python.png" alt="Python" onerror="this.style.display='none';"><span class="fallback-icon">🐍</span><p>Python</p></article>
+          <article class="tech-icon-card"><img src="assets/icon-sql.png" alt="SQL" onerror="this.style.display='none';"><span class="fallback-icon">🗄️</span><p>SQL</p></article>
+          <article class="tech-icon-card"><img src="assets/icon-tableau.png" alt="Tableau" onerror="this.style.display='none';"><span class="fallback-icon">📊</span><p>Tableau</p></article>
+          <article class="tech-icon-card"><img src="assets/mongodb.png" alt="MongoDB" onerror="this.style.display='none';"><span class="fallback-icon">📊</span><p>MongoDB</p></article>
+          <article class="tech-icon-card"><img src="assets/github.png" alt="Github" onerror="this.style.display='none';"><span class="fallback-icon">📊</span><p>Github</p></article>
+          <article class="tech-icon-card"><img src="assets/colab.png" alt="Colab" onerror="this.style.display='none';"><span class="fallback-icon">📊</span><p>Colab</p></article>
+          <article class="tech-icon-card"><img src="assets/postgreSQL.png" alt="PostgreSQL" onerror="this.style.display='none';"><span class="fallback-icon">📊</span><p>PostgreSQL</p></article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container section reveal morph">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and strengths</h2>
+      </div>
+      <div class="skills-grid">
+        <span>Python</span><span>SQL</span><span>Data Cleaning</span><span>Tableau</span>
+        <span>Data Visualization</span><span>Forecasting</span><span>Customer Segmentation</span><span>CRM Analytics</span>
+        <span>Dashboard Design</span><span>Database Design</span>
+        <span>NLP</span><span>Business Analysis</span><span>Problem Solving</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container section reveal morph">
+      <div class="contact-card glass-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something with data.</h2>
+        <p>I am looking for Data Analyst opportunities where I can apply SQL, analytics, visualization, and business problem-solving skills.</p>
+        <div class="hero-actions">
+          <a href="mailto:tthaodth310705@gmail.com" class="btn primary">Email Me</a>
+          <a href="https://github.com/Tthaodangiu" target="_blank" class="btn secondary">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content morph-pop">
+      <button class="modal-close" data-close>×</button>
+
+      <p class="modal-type" id="modalType"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+
+      <div class="modal-section">
+        <h4>Tech Stack</h4>
+        <div class="modal-tags" id="modalTechStack"></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Project Workflow</h4>
+        <div class="workflow-list" id="modalWorkflow"></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Visuals</h4>
+        <div class="visual-grid" id="modalVisuals"></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Results & Highlights</h4>
+        <div class="results-grid" id="modalResults"></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Insights</h4>
+        <ul id="modalPoints"></ul>
+      </div>
+
+      <div class="modal-actions">
+        <a id="modalGithub" href="#" target="_blank" class="btn primary">View GitHub</a>
+        <a id="modalDemo" href="#" target="_blank" class="btn secondary">View Demo</a>
+        <a id="modalReport" href="#" target="_blank" class="btn secondary">Full Report</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Thao Do. Portfolio built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
